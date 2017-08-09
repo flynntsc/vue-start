@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routes from './router'
 import ElementUI from 'element-ui'
-import '~/theme/index.css'
+import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 
 const router = new VueRouter({

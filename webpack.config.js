@@ -1,5 +1,6 @@
 // webpack
 const webpack = require('webpack')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
@@ -63,6 +64,7 @@ module.exports = (env = {}) => ({
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor', 'manifest']
     }),
