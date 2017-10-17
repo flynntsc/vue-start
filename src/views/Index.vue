@@ -20,6 +20,9 @@ export default {
   },
 
   methods: {},
+  created(){
+    this.$api.getTopics().then(data=>console.dir(data))
+  },
   mounted() {
   }
 }
