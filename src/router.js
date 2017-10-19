@@ -5,7 +5,7 @@ Vue.use(Router)
 
 const routes = [
   {
-    path: '/',
+    path: '/index',
     component: resolve => require(['./views/Index.vue'], resolve),
     name: '首页'
   },

@@ -9,7 +9,7 @@ const router = new VueRouter({
   routes
 })
 
-// 原型挂载api对象，避免频繁加载
+// 原型挂载api对象，避免频繁手动引入
 import * as api from '~/api/index'
 Vue.prototype.$api = api
 
