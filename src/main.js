@@ -8,6 +8,10 @@ import routes from './router'
 const router = new VueRouter({
   routes
 })
+router.afterEach((to, from) => {
+  // 动态修改 document title
+  document.title = to.meta.title
+})
 
 // 原型挂载api对象，避免频繁手动引入
 import * as api from '~/api/index'

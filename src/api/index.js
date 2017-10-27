@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 // 封装参数，简化写法，注意是否含'{}'
-const prefix = '/api'
+const prefix = '/api' //接口均以/api开头，简化参数
 const link = url => prefix + url
 const get = (url, method) => params => axios.get(prefix + url, { params })
 const post = (url, method) => params => axios.post(prefix + url, params)
