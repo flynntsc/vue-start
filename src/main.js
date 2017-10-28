@@ -10,7 +10,7 @@ const router = new VueRouter({
 })
 router.afterEach((to, from) => {
   // 动态修改 document title
-  document.title = to.meta.title
+  document.title = to.meta.title || '缺乏Title'
 })
 
 // 原型挂载api对象，避免频繁手动引入
@@ -19,7 +19,7 @@ Vue.prototype.$api = api
 
 // 引入饿了么框架
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 
 new Vue({
