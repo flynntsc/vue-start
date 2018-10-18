@@ -7,12 +7,20 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import HelloWorld from '@/components/HelloWorld'
+import Here from '@/mixins/Here'
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     HelloWorld
+  },
+  mixins: [Here],
+  created() {
+    console.log(`created: 2 home.vue`)
+  },
+  mounted() {
+    console.log(`mounted: 2 home.vue`)
   }
-};
+}
 </script>

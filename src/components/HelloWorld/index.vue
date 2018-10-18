@@ -32,11 +32,17 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   props: {
     msg: String
+  },
+  created() {
+    console.log(`created: 3 HelloWorld`)
+  },
+  mounted() {
+    console.log(`mounted: 3 HelloWorld`)
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
