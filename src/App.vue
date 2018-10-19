@@ -20,6 +20,9 @@ export default {
   created() {
     console.log(`created: 1 app.vue`)
   },
+  beforeMount() {
+    console.log(`beforeMount: 1 app.vue`)
+  },
   mounted() {
     console.log(`mounted: 1 app.vue`)
   }

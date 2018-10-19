@@ -19,6 +19,9 @@ export default {
   created() {
     console.log(`created: 2 home.vue`)
   },
+  beforeMount() {
+    console.log(`beforeMount: 2 home.vue`)
+  },
   mounted() {
     console.log(`mounted: 2 home.vue`)
   }

@@ -39,6 +39,9 @@ export default {
   created() {
     console.log(`created: 3 HelloWorld`)
   },
+  beforeMount() {
+    console.log(`beforeMount: 3 HelloWorld`)
+  },
   mounted() {
     console.log(`mounted: 3 HelloWorld`)
   }

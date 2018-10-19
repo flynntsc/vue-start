@@ -1,0 +1,12 @@
+import axios from './axios'
+
+const format = url => `/api${url}`
+const get = url => params => axios.get(format(url), { params })
+const post = url => params => axios.post(format(url), params)
+const put = url => params => axios.put(format(url), params)
+const del = url => params => axios.delete(format(url), { params })
+
+export default {
+  // 登录
+  wapLogin: post('/wapLogin')
+}
