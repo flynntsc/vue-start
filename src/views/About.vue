@@ -8,7 +8,7 @@
 </template>
 
 <style lang="less" scoped>
-@import '../styles/common.less';
+@import '../styles/style.less';
 .about-text {
   color: @primaryColor;
   .flyn {

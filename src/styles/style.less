@@ -1,0 +1,15 @@
+// 需要调用变量、函数时，均可直接调用
+
+// 常用变量
+@primaryColor: #f00;
+@warnColor: #f90;
+
+// 多行省略号；单行省略号请额外定义并继承.ellipsis
+.ellipsis(@num: 2) {
+  display: -webkit-box;
+  overflow: hidden;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: off */
+  -webkit-line-clamp: @num;
+}

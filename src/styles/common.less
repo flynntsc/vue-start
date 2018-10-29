@@ -1,14 +1,20 @@
-@primaryColor: #f00;
-@warnColor: #f90;
+// 常用样式；推荐继承使用；
+// 已统一在main.js调用，直接使用；
+// 不可在scoped中调用，否则会生成多份；
 
-.flyn (@color:@primaryColor) {
-  color: @color;
+// Use => &:extend(.clearfix all);
+// 清除浮动
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 
-.flyn1 (@color:#356) {
-  color: @color;
-}
-
-.flyn2 (@color:#308) {
-  color: @color;
+// 单行省略号；
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
